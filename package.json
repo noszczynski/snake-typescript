@@ -1,0 +1,22 @@
+{
+  "name": "snake",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/lodash": "4.14.198",
+    "@types/ramda": "0.29.3",
+    "typescript": "5.2.2",
+    "eslint": "8.49.0",
+    "prettier": "3.0.3",
+    "vite": "4.4.5"
+  },
+  "dependencies": {
+    "ramda": "^0.29.0"
+  }
+}
