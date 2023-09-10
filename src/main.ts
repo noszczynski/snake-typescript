@@ -1,8 +1,15 @@
 import "./style.css";
 import { startGame } from "./app.ts";
+import { createCanvasElement, createGameOverElement, createPointsElement } from "./elements.ts";
 
-document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
-  <canvas width="625" height="625" id="game"></canvas>
-`;
+const elements = [
+  createPointsElement(),
+  createCanvasElement(),
+  createGameOverElement(),
+];
+
+const appElement = document.querySelector<HTMLDivElement>("#app")! as HTMLDivElement;
+
+elements.forEach((el) => appElement.appendChild(el));
 
 startGame();
